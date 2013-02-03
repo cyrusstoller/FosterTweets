@@ -72,7 +72,7 @@
         TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
         
         // Set the initial tweet text. See the framework for additional properties that can be set.
-        [tweetViewController setInitialText:[suggestedTweetsMutableArray objectAtIndex:1]];
+        [tweetViewController setInitialText:[suggestedTweetsMutableArray objectAtIndex:messageToTweetRow]];
                 
         // Create the completion handler block.
         [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
@@ -133,11 +133,10 @@
 //	SuggestedTweetsCell *cell = (SuggestedTweetsCell*)[tableView
 //                             dequeueReusableCellWithIdentifier:@"SuggestedTweetsCell"];
 
-    messageToTweetRow = indexPath.row;
 	cell.thisTweetLabel.text = [suggestedTweetsMutableArray objectAtIndex:indexPath.row];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-	CGRect frame = CGRectMake(273.0f, 11.0f, 38.0f, 38.0f);
+	CGRect frame = CGRectMake(273.0f, 16.0f, 38.0f, 38.0f);
 	button.frame = frame;	// match the button's size with the image size
     
 	[button setBackgroundImage:[UIImage imageNamed:@"plusnewmobile.png"] forState:UIControlStateNormal];
@@ -201,6 +200,11 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    messageToTweetRow = indexPath.row;
+    
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
+    
+    [self sendCustomTweet:self];
 }
 
 @end
