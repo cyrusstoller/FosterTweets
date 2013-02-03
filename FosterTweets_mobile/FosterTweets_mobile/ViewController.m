@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+@synthesize loginTextField;
+@synthesize passwordTextField;
 @synthesize loginButton;
 
 - (void)viewDidLoad
@@ -24,6 +26,7 @@
     //ffcc99
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:1.0f green:0.82f blue:0.60f alpha:1.0f];
+    
     
 //    int height = self.navigationController.navigationBar.frame.size.height;
 //    int width = self.navigationController.navigationBar.frame.size.width;
@@ -49,4 +52,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)Done {
+    [Done resignFirstResponder];
+    return YES;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
 @end
