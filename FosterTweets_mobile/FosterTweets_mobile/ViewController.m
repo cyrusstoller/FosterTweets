@@ -25,8 +25,13 @@
     
     //ffcc99
     
+    loginTextField.delegate = self;
+    passwordTextField.delegate = self;
+    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:1.0f green:0.82f blue:0.60f alpha:1.0f];
     
+    loginTextField.text = @"DunderMifflin";
+    passwordTextField.text = @"*********";
     
 //    int height = self.navigationController.navigationBar.frame.size.height;
 //    int width = self.navigationController.navigationBar.frame.size.width;
@@ -62,4 +67,5 @@
     [self.view endEditing:YES];
     [super touchesBegan:touches withEvent:event];
 }
+
 @end
