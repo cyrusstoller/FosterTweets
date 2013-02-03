@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8960511A16BDD3300091E235 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8960511916BDD3300091E235 /* UIKit.framework */; };
+		8960511C16BDD3300091E235 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8960511B16BDD3300091E235 /* Foundation.framework */; };
+		8960511E16BDD3300091E235 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8960511D16BDD3300091E235 /* CoreGraphics.framework */; };
+		8960512416BDD3300091E235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8960512216BDD3300091E235 /* InfoPlist.strings */; };
+		8960512616BDD3300091E235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960512516BDD3300091E235 /* main.m */; };
+		8960512A16BDD3300091E235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960512916BDD3300091E235 /* AppDelegate.m */; };
+		8960512C16BDD3300091E235 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960512B16BDD3300091E235 /* Default.png */; };
+		8960512E16BDD3300091E235 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960512D16BDD3300091E235 /* Default@2x.png */; };
+		8960513016BDD3300091E235 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960512F16BDD3300091E235 /* Default-568h@2x.png */; };
+		8960513316BDD3300091E235 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8960513116BDD3300091E235 /* MainStoryboard.storyboard */; };
+		8960513616BDD3300091E235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960513516BDD3300091E235 /* ViewController.m */; };
+		8960513E16BDD4200091E235 /* SuggestedTweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960513D16BDD4200091E235 /* SuggestedTweetsViewController.m */; };
+		8960514116BDD5FA0091E235 /* SuggestedTweetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960514016BDD5FA0091E235 /* SuggestedTweetsCell.m */; };
+		8960516016BDE42C0091E235 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960515F16BDE42C0091E235 /* plus.png */; };
+		8960516516BDE6EA0091E235 /* LogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960516416BDE6EA0091E235 /* LogIn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8960511516BDD3300091E235 /* FosterTweets_mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FosterTweets_mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8960511916BDD3300091E235 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8960511B16BDD3300091E235 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8960511D16BDD3300091E235 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8960512116BDD3300091E235 /* FosterTweets_mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FosterTweets_mobile-Info.plist"; sourceTree = "<group>"; };
+		8960512316BDD3300091E235 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8960512516BDD3300091E235 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8960512716BDD3300091E235 /* FosterTweets_mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FosterTweets_mobile-Prefix.pch"; sourceTree = "<group>"; };
+		8960512816BDD3300091E235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8960512916BDD3300091E235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8960512B16BDD3300091E235 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8960512D16BDD3300091E235 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8960512F16BDD3300091E235 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8960513216BDD3300091E235 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8960513416BDD3300091E235 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8960513516BDD3300091E235 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8960513C16BDD4200091E235 /* SuggestedTweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestedTweetsViewController.h; sourceTree = "<group>"; };
+		8960513D16BDD4200091E235 /* SuggestedTweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestedTweetsViewController.m; sourceTree = "<group>"; };
+		8960513F16BDD5FA0091E235 /* SuggestedTweetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestedTweetsCell.h; sourceTree = "<group>"; };
+		8960514016BDD5FA0091E235 /* SuggestedTweetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestedTweetsCell.m; sourceTree = "<group>"; };
+		8960515F16BDE42C0091E235 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		8960516416BDE6EA0091E235 /* LogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogIn.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8960511216BDD3300091E235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8960511A16BDD3300091E235 /* UIKit.framework in Frameworks */,
+				8960511C16BDD3300091E235 /* Foundation.framework in Frameworks */,
+				8960511E16BDD3300091E235 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8960510A16BDD3300091E235 = {
+			isa = PBXGroup;
+			children = (
+				8960511F16BDD3300091E235 /* FosterTweets_mobile */,
+				8960511816BDD3300091E235 /* Frameworks */,
+				8960511616BDD3300091E235 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8960511616BDD3300091E235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8960511516BDD3300091E235 /* FosterTweets_mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8960511816BDD3300091E235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8960511916BDD3300091E235 /* UIKit.framework */,
+				8960511B16BDD3300091E235 /* Foundation.framework */,
+				8960511D16BDD3300091E235 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8960511F16BDD3300091E235 /* FosterTweets_mobile */ = {
+			isa = PBXGroup;
+			children = (
+				8960512816BDD3300091E235 /* AppDelegate.h */,
+				8960512916BDD3300091E235 /* AppDelegate.m */,
+				8960513116BDD3300091E235 /* MainStoryboard.storyboard */,
+				8960513F16BDD5FA0091E235 /* SuggestedTweetsCell.h */,
+				8960514016BDD5FA0091E235 /* SuggestedTweetsCell.m */,
+				8960513C16BDD4200091E235 /* SuggestedTweetsViewController.h */,
+				8960513D16BDD4200091E235 /* SuggestedTweetsViewController.m */,
+				8960513416BDD3300091E235 /* ViewController.h */,
+				8960513516BDD3300091E235 /* ViewController.m */,
+				8960512016BDD3300091E235 /* Supporting Files */,
+			);
+			path = FosterTweets_mobile;
+			sourceTree = "<group>";
+		};
+		8960512016BDD3300091E235 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8960516416BDE6EA0091E235 /* LogIn.png */,
+				8960515F16BDE42C0091E235 /* plus.png */,
+				8960512116BDD3300091E235 /* FosterTweets_mobile-Info.plist */,
+				8960512216BDD3300091E235 /* InfoPlist.strings */,
+				8960512516BDD3300091E235 /* main.m */,
+				8960512716BDD3300091E235 /* FosterTweets_mobile-Prefix.pch */,
+				8960512B16BDD3300091E235 /* Default.png */,
+				8960512D16BDD3300091E235 /* Default@2x.png */,
+				8960512F16BDD3300091E235 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8960511416BDD3300091E235 /* FosterTweets_mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8960513916BDD3300091E235 /* Build configuration list for PBXNativeTarget "FosterTweets_mobile" */;
+			buildPhases = (
+				8960511116BDD3300091E235 /* Sources */,
+				8960511216BDD3300091E235 /* Frameworks */,
+				8960511316BDD3300091E235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FosterTweets_mobile;
+			productName = FosterTweets_mobile;
+			productReference = 8960511516BDD3300091E235 /* FosterTweets_mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8960510C16BDD3300091E235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FosterTweets;
+			};
+			buildConfigurationList = 8960510F16BDD3300091E235 /* Build configuration list for PBXProject "FosterTweets_mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8960510A16BDD3300091E235;
+			productRefGroup = 8960511616BDD3300091E235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8960511416BDD3300091E235 /* FosterTweets_mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8960511316BDD3300091E235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8960512416BDD3300091E235 /* InfoPlist.strings in Resources */,
+				8960512C16BDD3300091E235 /* Default.png in Resources */,
+				8960512E16BDD3300091E235 /* Default@2x.png in Resources */,
+				8960513016BDD3300091E235 /* Default-568h@2x.png in Resources */,
+				8960513316BDD3300091E235 /* MainStoryboard.storyboard in Resources */,
+				8960516016BDE42C0091E235 /* plus.png in Resources */,
+				8960516516BDE6EA0091E235 /* LogIn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8960511116BDD3300091E235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8960512616BDD3300091E235 /* main.m in Sources */,
+				8960512A16BDD3300091E235 /* AppDelegate.m in Sources */,
+				8960513616BDD3300091E235 /* ViewController.m in Sources */,
+				8960513E16BDD4200091E235 /* SuggestedTweetsViewController.m in Sources */,
+				8960514116BDD5FA0091E235 /* SuggestedTweetsCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8960512216BDD3300091E235 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8960512316BDD3300091E235 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8960513116BDD3300091E235 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8960513216BDD3300091E235 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8960513716BDD3300091E235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8960513816BDD3300091E235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8960513A16BDD3300091E235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FosterTweets_mobile/FosterTweets_mobile-Prefix.pch";
+				INFOPLIST_FILE = "FosterTweets_mobile/FosterTweets_mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8960513B16BDD3300091E235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FosterTweets_mobile/FosterTweets_mobile-Prefix.pch";
+				INFOPLIST_FILE = "FosterTweets_mobile/FosterTweets_mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8960510F16BDD3300091E235 /* Build configuration list for PBXProject "FosterTweets_mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8960513716BDD3300091E235 /* Debug */,
+				8960513816BDD3300091E235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8960513916BDD3300091E235 /* Build configuration list for PBXNativeTarget "FosterTweets_mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8960513A16BDD3300091E235 /* Debug */,
+				8960513B16BDD3300091E235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8960510C16BDD3300091E235 /* Project object */;
+}
