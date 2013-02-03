@@ -16,6 +16,8 @@
 @implementation SuggestedTweetsViewController
 
 @synthesize suggestedTweetsMutableArray;
+@synthesize tweetable;
+@synthesize messageToTweetRow;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,11 +32,19 @@
 {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(canTweetStatus) name:ACAccountStoreDidChangeNotification object:nil];
+    
+    tweetable = ([TWTweetComposeViewController canSendTweet]) ? YES : NO;
+
     suggestedTweetsMutableArray = [[NSMutableArray alloc] init];
     
-    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"@Fostermytweets finds good content for me to share via social media so I don't have to. They deliver prepackaged tweets."]];
+    messageToTweetRow = 0;
+
+    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"@Fostermytweetsfinds good content for me to share via social media so I don't have to."]];
+
+    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"Be sure to check out the new #DunderMifflin ad during tomorrow's #SuperBowl! http://bit.ly/12j4Mvb"]];
     
-    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"We're responsible about helping to replant trees since we sell paper. Check out this infographic about trees in San Francisco http://visual.ly/tree-map-san-francisco"]];
+    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"We're responsible about helping to replant trees since we sell paper. Check out this link http://bit.ly/YmcMqs."]];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -43,10 +53,55 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void) canTweetStatus
+{
+    tweetable = ([TWTweetComposeViewController canSendTweet]) ? YES : NO;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)sendCustomTweet:(id)sender {
+    
+    if (tweetable)
+    {
+        // Set up the built-in twitter composition view controller.
+        TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
+        
+        // Set the initial tweet text. See the framework for additional properties that can be set.
+        [tweetViewController setInitialText:[suggestedTweetsMutableArray objectAtIndex:1]];
+                
+        // Create the completion handler block.
+        [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
+            BOOL ableToTweet = NO;
+            switch (result) {
+                case TWTweetComposeViewControllerResultCancelled:
+                    break;
+                case TWTweetComposeViewControllerResultDone:
+                    ableToTweet = YES;
+                    break;
+                default:
+                    break;
+            }
+            
+//        [self performSelectorOnMainThread:@selector(displayText:) withObject:output waitUntilDone:NO];
+        
+        // Dismiss the tweet composition view controller.
+        [self dismissModalViewControllerAnimated:YES];
+    }];
+    
+    // Present the tweet composition view controller modally.
+    [self presentModalViewController:tweetViewController animated:YES];
+    }
+    else
+    {
+        UIAlertView *unableToTweetAlert = [[UIAlertView alloc] initWithTitle:@"Unable to connect to Twitter account" message:@"" delegate:self
+                                                           cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        [unableToTweetAlert show];
+    }
 }
 
 #pragma mark - Table view data source
@@ -74,12 +129,24 @@
         cell = (SuggestedTweetsCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         [cell setAccessoryType:UITableViewCellAccessoryNone];
     }
-    
+        
 //	SuggestedTweetsCell *cell = (SuggestedTweetsCell*)[tableView
 //                             dequeueReusableCellWithIdentifier:@"SuggestedTweetsCell"];
 
+    messageToTweetRow = indexPath.row;
 	cell.thisTweetLabel.text = [suggestedTweetsMutableArray objectAtIndex:indexPath.row];
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+	CGRect frame = CGRectMake(273.0f, 11.0f, 38.0f, 38.0f);
+	button.frame = frame;	// match the button's size with the image size
+    
+	[button setBackgroundImage:[UIImage imageNamed:@"plusnewmobile.png"] forState:UIControlStateNormal];
+    
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(sendCustomTweet:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [cell addSubview:button];
     
     return cell;
 }

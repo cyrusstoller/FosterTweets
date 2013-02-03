@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+#import <Accounts/Accounts.h>
+#import <Twitter/Twitter.h>
 
-@interface SuggestedTweetsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
-{
-    NSMutableArray  *suggestedTweetsMutableArray;
-}
+@interface SuggestedTweetsViewController : UITableViewController
+//{
+//    NSMutableArray  *suggestedTweetsMutableArray;
+//}
 
-@property (nonatomic,retain) NSMutableArray     *suggestedTweetsMutableArray;
+@property (nonatomic,strong) NSMutableArray     *suggestedTweetsMutableArray;
+@property (nonatomic) BOOL                      tweetable;
+@property (nonatomic) NSInteger                messageToTweetRow;
+
+- (IBAction)sendCustomTweet:(id)sender;
 
 @end

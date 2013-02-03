@@ -13,5 +13,6 @@
 @property (nonatomic, strong) IBOutlet UILabel      *thisTweetLabel;
 @property (nonatomic, strong) IBOutlet UIButton     *postTweetButton;
 
-- (IBAction)postTweetButtonPressed:(id)sender;
+//- (IBAction)postTweetButtonPressed:(id)sender;
+
 @end
