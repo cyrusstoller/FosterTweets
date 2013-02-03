@@ -1,5 +1,5 @@
 function keyword($scope) {
-    $scope.pre_set_keywords = ['aaa', 'bbb', 'ccc', 'ddd'];
+    $scope.pre_set_keywords = ['Tech', 'Office', 'Small Business', 'Chicago'];
     $scope.keywords = [];
     $scope.kw = '';
     
