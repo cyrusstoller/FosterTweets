@@ -49,4 +49,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)Done {
+    [Done resignFirstResponder];
+    return YES;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
 @end
