@@ -31,6 +31,10 @@
 		896051DD16BDF1830091E235 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896051DC16BDF1830091E235 /* MobileCoreServices.framework */; };
 		89F49B0516BE0BA000282F6F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F49B0416BE0BA000282F6F /* Accounts.framework */; };
 		89F49B1F16BE1ECB00282F6F /* plusnewmobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F49B1E16BE1ECB00282F6F /* plusnewmobile.png */; };
+		89F49B2616BE2BAD00282F6F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F49B2516BE2BAD00282F6F /* Icon.png */; };
+		89F49B2916BE2BD500282F6F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F49B2816BE2BD500282F6F /* Icon.png */; };
+		89F49B2B16BE2C1300282F6F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F49B2A16BE2C1300282F6F /* Icon@2x.png */; };
+		89F49B2D16BE2C2400282F6F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F49B2C16BE2C2400282F6F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +113,10 @@
 		896051DC16BDF1830091E235 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		89F49B0416BE0BA000282F6F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		89F49B1E16BE1ECB00282F6F /* plusnewmobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusnewmobile.png; sourceTree = "<group>"; };
+		89F49B2516BE2BAD00282F6F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		89F49B2816BE2BD500282F6F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		89F49B2A16BE2C1300282F6F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		89F49B2C16BE2C2400282F6F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,8 @@
 		8960510A16BDD3300091E235 = {
 			isa = PBXGroup;
 			children = (
+				89F49B2C16BE2C2400282F6F /* Icon@2x.png */,
+				89F49B2816BE2BD500282F6F /* Icon.png */,
 				89F49B0416BE0BA000282F6F /* Accounts.framework */,
 				896051DC16BDF1830091E235 /* MobileCoreServices.framework */,
 				896051DA16BDF1760091E235 /* SystemConfiguration.framework */,
@@ -186,6 +196,8 @@
 		8960512016BDD3300091E235 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89F49B2A16BE2C1300282F6F /* Icon@2x.png */,
+				89F49B2516BE2BAD00282F6F /* Icon.png */,
 				89F49B1E16BE1ECB00282F6F /* plusnewmobile.png */,
 				8960516416BDE6EA0091E235 /* LogIn.png */,
 				8960515F16BDE42C0091E235 /* plus.png */,
@@ -321,6 +333,10 @@
 				8960516516BDE6EA0091E235 /* LogIn.png in Resources */,
 				896051D416BDF1260091E235 /* CHANGELOG.md in Resources */,
 				89F49B1F16BE1ECB00282F6F /* plusnewmobile.png in Resources */,
+				89F49B2616BE2BAD00282F6F /* Icon.png in Resources */,
+				89F49B2916BE2BD500282F6F /* Icon.png in Resources */,
+				89F49B2B16BE2C1300282F6F /* Icon@2x.png in Resources */,
+				89F49B2D16BE2C2400282F6F /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

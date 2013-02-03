@@ -33,17 +33,13 @@
 //    
 //    navLabel.textColor = [UIColor blackColor];
 //    navLabel.font = [UIFont boldSystemFontOfSize:24.0f];
-//    //    if (SYSTEM_VERSION_LESS_THAN(@"6.0"))
 //    //        navLabel.textAlignment = UITextAlignmentCenter;
-//    //    else if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
 //    navLabel.textAlignment = NSTextAlignmentCenter;
 //    ((UILabel *)self.navigationItem.titleView).text = @"FosterTweets Login";
-//    
+    
 //    self.navigationItem.titleView = navLabel;
     
-    
-    //        self.navigationController. = [UIColor colorWithRed:1.0f green:0.941f blue:0.60f alpha:1.0f];
-    
+        
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
