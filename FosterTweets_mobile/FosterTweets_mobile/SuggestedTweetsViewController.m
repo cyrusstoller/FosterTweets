@@ -44,7 +44,7 @@
 
     [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"Be sure to check out the new #DunderMifflin ad during tomorrow's #SuperBowl! http://bit.ly/12j4Mvb"]];
     
-    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"We're responsible about helping to replant trees since we sell paper. Check out this link http://bit.ly/YmcMqs."]];
+    [suggestedTweetsMutableArray addObject:[NSString stringWithFormat:@"The 9 different types of coworkers in an #infographic. Great article! http://visual.ly/9-types-collaborators-0"]];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
