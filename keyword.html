@@ -1,23 +1,89 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="app">
   <head>
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/keyword.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script src="./js/keyword.js"></script>
   </head>
   <body>
-	<div class="container-fluid">
-	  <div class="row-fluid">
-	    <div class="span4">
-	      ..
-	    </div>
-	    <div class="span4">
-	      ..
-	    </div>
-	    <div class="span4">
-	      xx
-	    </div>
-	  </div>
+  	<div class="container-fluid" >
+  	  <div class="row-fluid">
+  	    <div class="span12 head">
+  	      <h1>Your FosterTweet's Dashboard</h1>
+  	    </div>
+  	  </div>
+  	  <div class="row-fluid">
+  	    <div class="span1">
+  	    </div>
+  	    <div class="span10">
+  	      <h3>@milkliker</h3>
+  	    </div>
+  	    <div class="span1">
+  	    </div>
+  	  </div>
+  	  
+  	  <div class="row-fluid">
+  	    <div class="span1">
+  	    </div>
+  	    <div class="span7">
+  	      <h4 style="margin-left:160px">Describe Your Business</h4>
+  	    </div>
+  	    <div class="span3">
+  	      <input ng-model="zipcode" type="text" placeholder="Your zipcode here"/>
+  	    </div>
+  	    <div class="span1">
+  	    </div>
+  	  </div>
+  	  
+  	  <div class="row-fluid">
+  	    <div class="span1">
+  	    </div>
+  	    <div class="span5">
+		  	<table class="table table-bordered" ng-controller="keyword">
+		  	  <tr>
+		  	    <td>
+		  	      Popular Areas of Interest<br />
+		  	      <ul class="keyword nav nav-pills nav-stacked" style="min-height:300px">
+			     	<li ng-repeat="word in pre_set_keywords | filter:kw">
+			     	  <a href="#" ng-click="add_kw(word)">
+			     	  	{{word}}
+			     	  	<i style="float:right" class="icon-plus-sign"></i>
+			     	  </a>
+			     	</li>
+			      </ul>
+		  	    </td>
+		  	    <td>
+		  	      Your Key Words<br />
+			      <input class="keyword" type="text" ng-model="kw" on-enter="add_kw()" placeholder="Enter New">
+			      <ul class="keyword nav nav-pills nav-stacked">
+			     	<li ng-repeat="word in keywords">
+			     	  <a href="#">
+			     	  	{{word}}
+			     	  	<i style="float:right" class="icon-remove-sign" ng-click="remove_kw(word)"></i>
+			     	  </a>
+			     	</li>
+			      </ul>
+		  	    </td>
+		  	  </tr>
+		  	</table>
+  	    </div>
+  	    <div class="span5">
+	      <iframe class="table-bordered" width="440" height="356" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;geocode=&amp;q={{zipcode}},usa&amp;output=embed"></iframe>
+  	    </div>
+  	    <div class="span1">
+  	    </div>
+  	  </div>
+  	  <div class="row-fluid">
+  	    <div class="span1">
+  	    </div>
+  	    <div class="span10" style="text-align:center">
+  	      <button type="button" class="btn btn-large btn-primary">Submit</button>
+  	    </div>
+  	    <div class="span1">
+  	    </div>
+  	  </div>
 	</div>
   </body>
 </html>

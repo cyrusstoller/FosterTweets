@@ -1,0 +1,7 @@
+.container-fluid {padding:0px!important;}
+.head{height:70px;background-color:#fac090;color:#fff;text-align:center;}
+.keyword{width:200px;}
+input.keyword{width:186px!important;}
+
+.nav > li > a {background-color:#ccc}
+.nav > li > a:hover {background-color:#eee}
