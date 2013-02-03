@@ -136,7 +136,7 @@
 	cell.thisTweetLabel.text = [suggestedTweetsMutableArray objectAtIndex:indexPath.row];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-	CGRect frame = CGRectMake(273.0f, 16.0f, 38.0f, 38.0f);
+	CGRect frame = CGRectMake(273.0f, 21.0f, 38.0f, 38.0f);
 	button.frame = frame;	// match the button's size with the image size
     
 	[button setBackgroundImage:[UIImage imageNamed:@"plusnewmobile.png"] forState:UIControlStateNormal];
